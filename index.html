@@ -12,101 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <style>
-        .header-area {
-            width: 1440px;
-            height: 662.05px;
-            margin: auto;
-            background-color: #F3FCF7;
-
-        }
-
-        .header {
-            width: 1177px;
-            height: 41.94px;
-            margin: auto;
-            display: flex;
-            padding-top: 41px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .menu {
-            
-            display: flex;
-            justify-content: space-around;
-            gap: 20px;
-            list-style: none;
-            align-items: center;
-
-        }
-
-        .menu-link {
-            text-decoration: none;
-            color: #1D1D1F;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 100%;
-            letter-spacing: 0;
-        }
-
-        .menu-link:hover {
-            color: #06C167;
-        }
-        .hamburger{
-            display: none;
-        }
-
-        /* Responsive navbar */
-        @media (max-width:768px) {
-            .header-area {
-                width: 100%;
-                height: auto;
-                padding: 10px 0;
-                background-color: #F3FCF7;
-                padding: 0 15px;
-                /* padding-left: 10px;
-                padding-right: 10px; */
-
-            }
-
-            .header {
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-               
-            }
-            /* Original menu */
-            .menu {
-                display: none;
-                flex-direction: column;
-                background-color: #F3FCF7;
-                padding: 15px 20px;
-                margin-top: 15px;
-                width: 50%;
-                border-radius: 8px;
-                margin-top: 10px;
-            }
-
-            .menu.active {
-                display: flex;
-            }
-            .hamburger{
-                display: block;
-                font-size: 25px;
-                cursor: pointer;
-                background: none;
-                border:2px solid #06C167;
-                padding: 5px 10px;
-                border-radius: 6px;
-                color: #06C167;
-            }
-        }
-       
-    </style>
-
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <script>
     function toggleMenu() {
@@ -141,9 +48,25 @@
                 </ul>
             </nav>
             <button class="hamburger" onclick="toggleMenu()">☰</button>
-
+        </div>
+        <!-- banner area started -->
+        <div class="banner-area">
+            <div class="banner-text">
+                <h1 class="banner-title">
+                    We're Serious For Food.
+                </h1>
+                <p class="banner-para">
+                    We strive to provide a space where guests can connect with themselves and explore their full
+                    potential, offering a safe place.
+                </p>
+                <button class="banner-btn">Get Started <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div class="banner-image">
+                <img src="./img/Place Your Image.png" alt="">
+            </div>
         </div>
     </header>
+
 </body>
 
 </html>
